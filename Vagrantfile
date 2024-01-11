@@ -49,6 +49,8 @@ Vagrant.configure("2") do |config|
           systemctl status nginx
           #check nginx port
           ss -tlpn | grep 4881
+          #add module for SELinux
+          
         SHELL
     end
   end
