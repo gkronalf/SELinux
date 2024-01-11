@@ -50,7 +50,10 @@ Vagrant.configure("2") do |config|
           #check nginx port
           ss -tlpn | grep 4881
           #add module for SELinux
-          
+          yum install -y setools-console policycoreutils-python
+          grep nginx /var/log/audit/audit.log | audit2allow -M nginx
+          semodule -i nginx.pp
+          systemctl start nginx
         SHELL
     end
   end
