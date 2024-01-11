@@ -11,4 +11,4 @@ README с описанием каждого решения (скриншоты �
 1. разрешение запуска с нестандартным портом используя утилиту setsebool  
    
   Для начала проверим, что в ОС отключен файервол: systemctl status firewalld  
-  ![](./screens/systemctl status firewalld.jpg)
+  <image src="/screens/systemctl status firewalld.jpg" alt="Screen whith status firewalld">
