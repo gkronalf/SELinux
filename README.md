@@ -12,20 +12,15 @@ README с описанием каждого решения (скриншоты �
    
   Для начала проверим, что в ОС отключен файервол: systemctl status firewalld  
 <image src="./screens/setsebool/systemctl_status_firewalld.jpg" alt="systemctl_status_firewalld">  
-  
   Проверяем, что конфигурация nginx настроена без ошибок: nginx -t  
-  <image src="./screens/setsebool/nginx_t.jpg" alt="nginx_t.jpg">  
-  
+<image src="./screens/setsebool/nginx_t.jpg" alt="nginx_t.jpg">  
 Проверим режим работы SELinux: getenforce  
   <image src="./screens/setsebool/getenforce.jpg" alt="getenforce.jpg">  
-  
   С помощью утилиты audit2why находим событие о блокировке порта и включаем параметр nis_enabled
   <image src="./screens/setsebool/nis_enabled.jpg" alt="nis_enabled.jpg">
-
   После применения данной команды и перезапуска nginx, видно, что пследний запустился  
-  
   
 2. Разрешение запуска с нестандартным портом используя semanage  
   
-  
+
 
