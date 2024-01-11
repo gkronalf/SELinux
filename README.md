@@ -11,5 +11,7 @@ README с описанием каждого решения (скриншоты �
 1. разрешение запуска с нестандартным портом используя утилиту setsebool  
    
   Для начала проверим, что в ОС отключен файервол: systemctl status firewalld  
-![](/screens/systemctl_status_firewalld.jpg)
-<image src="./screens/setsebool/systemctl_status_firewalld.jpg" alt="systemctl_status_firewalld">
+<image src="./screens/setsebool/systemctl_status_firewalld.jpg" alt="systemctl_status_firewalld">  
+  
+  Проверяем, что конфигурация nginx настроена без ошибок: nginx -t  
+  <image src="./screens/setsebool/nginx_t.jpg" alt="nginx_t.jpg">
