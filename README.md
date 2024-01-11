@@ -12,3 +12,4 @@ README с описанием каждого решения (скриншоты �
    
   Для начала проверим, что в ОС отключен файервол: systemctl status firewalld  
 ![](/screens/systemctl_status_firewalld.jpg)
+<image src="./screens/setsebool/systemctl_status_firewalld.jpg" alt="systemctl_status_firewalld">
